@@ -1,0 +1,17 @@
+{
+  "name": "student-app-backend",
+  "version": "1.0.0",
+  "description": "student marks management application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "rohan potdar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}

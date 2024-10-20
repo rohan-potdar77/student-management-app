@@ -1,0 +1,14 @@
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  age INT NOT NULL,
+  grade VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE marks (
+  id SERIAL PRIMARY KEY,
+  student_id INT,
+  subject VARCHAR(50),
+  marks INT,
+  FOREIGN KEY (student_id) REFERENCES students(id)
+);

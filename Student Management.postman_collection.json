@@ -1,0 +1,109 @@
+{
+  "info": {
+    "_postman_id": "e14a9180-7e9c-4629-bf22-9ff42e9edaa1",
+    "name": "Student Management",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32607046"
+  },
+  "item": [
+    {
+      "name": "Add Student",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"rohan\",\r\n    \"age\": 27,\r\n    \"grade\": 12,\r\n    \"subject\": \"english\",\r\n    \"marks\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "students"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Student List",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"rohan\",\r\n    \"age\": 27,\r\n    \"grade\": 12,\r\n    \"subject\": \"english\",\r\n    \"marks\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "students"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Student By Id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"rohan\",\r\n    \"age\": 27,\r\n    \"grade\": 12,\r\n    \"subject\": \"english\",\r\n    \"marks\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/students/32",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "students", "32"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Student By Id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"rohan\",\r\n    \"age\": 27,\r\n    \"grade\": 12,\r\n    \"subject\": \"english\",\r\n    \"marks\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/students/32",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["api", "students", "32"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
